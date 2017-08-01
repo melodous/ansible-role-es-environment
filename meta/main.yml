@@ -1,0 +1,11 @@
+---
+galaxy_info:
+  author: Raul Melo
+  description: Create ElasticSearch environment on Zabbix
+  company: OpenSolutions
+  platforms:
+    - name: RedHat
+      versions:
+        - 7
+dependencies:
+  - zabbix-tools

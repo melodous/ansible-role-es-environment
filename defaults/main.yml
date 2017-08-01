@@ -1,0 +1,26 @@
+---
+
+es_env_host_group: elasticsearch
+es_env_hostname: elasticsearch
+es_env_es_infra_hostgroup: elasticsearch
+es_env_indexers_infra_hostgroup: Indexers
+es_env_kibana_host: kibana
+
+es_env_link_templates:
+  - Template ElasticSeach Environment
+  - Template App ElasticSearch
+
+es_env_macros:
+ - macro_key: INDEXERS_GROUP
+   macro_value: "{{ es_env_indexers_infra_hostgroup }}"
+
+es_env_interfaces: []
+#es_env_interfaces:
+#  - type: 1
+#    main: 1
+#    useip: 1
+#    ip: 10.10.10.10
+#    dns: agent_hostname
+#    port: 10060
+
+es_env_map_name: ElasticSearch
